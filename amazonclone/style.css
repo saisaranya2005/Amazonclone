@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #0F1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    height: 50px;
+    width: 100px;
+}
+
+.logo {
+    background-image: url("amazon_logo.png");
+    height: 50px;
+    width: 100%;
+    background-size: cover;
+}
+
+.border {
+    border: 1.5px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid white;
+    padding: 5px;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+.deliver {
+    color: #CCCCCC;
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+.country {
+    font-size: 1.2rem;
+    margin-left: 3px;
+}
+
+.navaddress:hover {
+    border: 1.5px solid white;
+}
+
+.nav-search {
+    display: flex;
+    background-color: pink;
+    width: 100%;
+    max-width: 620px; /* Set a maximum width for better responsiveness */
+    height: 40px;
+    border-radius: 4px;
+    justify-content: space-evenly;
+}
+
+.nav-search:hover {
+    border: 2px solid #e9c111;
+}
+
+.search-select {
+    background-color: #F3F3F3;
+    width: 50px;
+    text-align: center;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border: none;
+}
+
+.search-input {
+    width: 100%;
+    border: none;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgba(243, 165, 10, 0.791);
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #0F1111;
+}
+
+span {
+    font-size: 0.8rem;
+}
+
+.nav-second {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.border:hover {
+    border: 1.5px solid white;
+}
+
+.nav-cart i {
+    font-size: 38px;
+}
+
+.nav-cart {
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.panel {
+    height: 40px;
+    background-color: #2c3332f2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-options p {
+    display: inline;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+
+.panel-options {
+    width: 70%;
+}
+
+.panel-deals {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.hero-section {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-image: url("hero_image2.jpg");
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: background-image 2s ease-in-out, transform 2s ease-in-out;
+}
+
+.shop-alert {
+    z-index: 2;
+    width: 100%;
+    height: 40px;
+    color: #0F1111;
+    background-color: #fff9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("hero_image.jpg");
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out, transform 1.5s ease-in-out;
+    transition-delay: 1.5s;
+    z-index: 0;
+}
+
+.hero-section:hover {
+    background-image: url("hero_image.jpg");
+}
+
+.hero-section:hover::before {
+    opacity: 1;
+}
+
+@keyframes imageChange {
+    0%, 100% {
+        background-image: url("hero_image1.jpg");
+    }
+    50% {
+        background-image: url("hero_image2.jpg");
+    }
+}
+
+.shop-alert a {
+    color: #007185;
+}
+
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+
+.chevron-icon {
+    position: absolute;
+    top: 25%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #007185;
+    cursor: pointer;
+}
+
+.chevron-left {
+    position: absolute;
+    top: 25%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.body {
+    background-color: #e2e7e6;
+}
+
+.box {
+    width: 23%;
+    height: 400px;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+}
+
+.box-img {
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.content {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.content p {
+    color: #007185;
+    font-weight: bold;
+    position: 100px;
+}
+
+.navfooter {
+    height: 700px;
+    width: 100%;
+    background-color: #e2e7e6;
+    display: flex;
+    flex-direction: column;
+}
+
+.back {
+    height: 10%;
+    background-color: #3d505e;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.let-know {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #232F3E;
+    color: white;
+    line-height: 30px;
+    border-bottom: 2px solid rgba(211, 211, 211, 0.268);
+}
+
+.let-know ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.let-know p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.amazon-end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    background-color: #232F3E;
+    color: white;
+    line-height: 50px;
+}
+
+.countries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.countries div {
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.end {
+    height: 200%;
+    width: 98.95%;
+    background-color: #131A22;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.column {
+    margin-bottom: 50px;
+}
+
+.column div {
+    text-align: center;
+}
+
+.let-knows {
+    flex-grow: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #131A22;
+    color: white;
+    line-height: 20px;
+    font-size: 13px;
+    width:100%;
+}
+
+.let-knows ul {
+    list-style-type: none;
+}
+
+.let-knows p {
+    font-weight: bold;
+    margin-bottom: 3px;
+    padding-bottom: 12px;
+}
+
+.ending{
+    background-color: #131A22;
+    height: 50px;
+    text-align: center;
+    line-height: 20px;
+    color:white;
+}
